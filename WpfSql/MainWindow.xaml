@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfSql.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfSql"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid Margin="0,0,-234,0" Height="434" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="517*"/>
+            <ColumnDefinition Width="226*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="sqlResult" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="3" Margin="-1,47,212,-47"/>
+        <ComboBox x:Name="box1" Grid.Column="2" HorizontalAlignment="Left" Margin="457,10,0,0" VerticalAlignment="Top" Width="263" Grid.ColumnSpan="2" SelectionChanged="ComboBox_SelectionChanged" Height="22">
+            <Border BorderBrush="Black" BorderThickness="1"/>
+        </ComboBox>
+        <Button x:Name="buttonAction" Grid.Column="2" Content="Запуск" HorizontalAlignment="Left" Margin="591,383,0,0" VerticalAlignment="Top" Height="25" Width="68" Click="buttonAction_Click"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Margin="16,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="501" Grid.ColumnSpan="3" Height="22"/>
+        <TextBox x:Name="TextBox2" Grid.Column="2" HorizontalAlignment="Left" Margin="468,314,0,0" TextWrapping="Wrap" Text="Введите параметр" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="box2" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="468,224,0,0" VerticalAlignment="Top" Width="252" SelectionChanged="ComboBox2_SelectionChanged"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "wH/1uum7YjLFX2JgCEkH2WpC6oP1k3B8KGuh8HUIWc7gztxoDI/u5iuKXV1wkv3f3wyol42EhMLQ18lYrQChFg==",
+  "success": true,
+  "projectFilePath": "D:\\Programming\\c#projects\\WpfSql\\WpfSql\\WpfSql.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MateBook\\.nuget\\packages\\npgsql\\6.0.3\\npgsql.6.0.3.nupkg.sha512",
+    "C:\\Users\\MateBook\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
